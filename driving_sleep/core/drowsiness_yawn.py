@@ -68,7 +68,7 @@ def lip_distance(shape):
 ap = argparse.ArgumentParser()
 ap.add_argument("-w", "--webcam", type=int, default=0,
                 help="index of webcam on system")
-ap.add_argument("-a", "--alarm", type=str, default="Alert.WAV", help="path alarm .WAV file")
+ap.add_argument("-a", "--alarm", type=str, default="driving_sleep/audio/Alert.WAV", help="path alarm .WAV file")
 
 args = vars(ap.parse_args())
 
@@ -82,8 +82,8 @@ COUNTER = 0
 
 print("-> Loading the predictor and detector...")
 #detector = dlib.get_frontal_face_detector()
-detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")    #Faster but less accurate
-predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
+detector = cv2.CascadeClassifier("driving_sleep/model/haarcascade_frontalface_default.xml")    #Faster but less accurate
+predictor = dlib.shape_predictor("driving_sleep/model/shape_predictor_68_face_landmarks.dat")
 
 
 print("-> Starting Video Stream")
