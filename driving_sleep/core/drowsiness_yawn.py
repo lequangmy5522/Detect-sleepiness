@@ -12,6 +12,7 @@ import dlib
 import cv2
 import playsound
 import os
+from driving_sleep.utils.map_utils import LocationTracker
 
 
 def sound_alarm(path):
@@ -91,6 +92,9 @@ vs = VideoStream(src=args["webcam"]).start()
 #vs= VideoStream(usePiCamera=True).start()       //For Raspberry Pi
 time.sleep(1.0)
 
+# Initialize location tracker
+location_tracker = LocationTracker()
+
 while True:
 
     frame = vs.read()
@@ -130,6 +134,10 @@ while True:
             if COUNTER >= EYE_AR_CONSEC_FRAMES:
                 if alarm_status == False:
                     alarm_status = True
+                    # Track incident location
+                    incident = location_tracker.track_incident()
+                    if incident:
+                        print(f"Alert! Drowsiness detected at {incident['address']}")
                     if args["alarm"] != "":
                         t = Thread(target=sound_alarm,
                                    args=(args["alarm"],))
@@ -167,6 +175,11 @@ while True:
 
     if key == ord("q"):
         break
+
+# Generate incident map before closing
+if location_tracker.incidents:
+    location_tracker.generate_map()
+    print("Incident map has been generated as 'incident_map.html'")
 
 cv2.destroyAllWindows()
 vs.stop()
