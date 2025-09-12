@@ -13,6 +13,7 @@ import cv2
 import playsound
 import os
 import sys
+sys.stdout.reconfigure(encoding='utf-8', errors='replace')  # Python 3.7+
 from pathlib import Path
 # Thêm thư mục gốc (DETECT-SLEEPINESS) vào sys.path
 ROOT = Path(__file__).resolve().parents[2]
