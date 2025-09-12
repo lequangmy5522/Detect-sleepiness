@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2a1311da69f72dd0a97da0181f3b3448 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2a1311da69f72dd0a97da0181f3b3448" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2a1311da69f72dd0a97da0181f3b3448 = L.map(
+                "map_2a1311da69f72dd0a97da0181f3b3448",
+                {
+                    center: [10.823, 106.6296],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d5bcd85727c6b78d3ef8c4a9ff754424 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d5bcd85727c6b78d3ef8c4a9ff754424.addTo(map_2a1311da69f72dd0a97da0181f3b3448);
+        
+    
+            var marker_830785186c071b399a1a0a390e882132 = L.marker(
+                [10.823, 106.6296],
+                {
+}
+            ).addTo(map_2a1311da69f72dd0a97da0181f3b3448);
+        
+    
+            var icon_1cbb56395f303a950bfc6f82c9b3ea15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_116fe5af00dca892c286a79bf438806e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06452f8cd33e97d0e6050fe29af63183 = $(`<div id="html_06452f8cd33e97d0e6050fe29af63183" style="width: 100.0%; height: 100.0%;">Drowsiness detected at 2025-09-12 20:50:00 Trường Chinh, Phường Tây Thạnh, Thành phố Hồ Chí Minh, 71509, Việt Nam</div>`)[0];
+                popup_116fe5af00dca892c286a79bf438806e.setContent(html_06452f8cd33e97d0e6050fe29af63183);
+            
+        
+
+        marker_830785186c071b399a1a0a390e882132.bindPopup(popup_116fe5af00dca892c286a79bf438806e)
+        ;
+
+        
+    
+    
+                marker_830785186c071b399a1a0a390e882132.setIcon(icon_1cbb56395f303a950bfc6f82c9b3ea15);
+            
+    
+            var marker_6f93dee4ed1b24a44f3a8106c8ec98cf = L.marker(
+                [10.823, 106.6296],
+                {
+}
+            ).addTo(map_2a1311da69f72dd0a97da0181f3b3448);
+        
+    
+            var icon_82f2c77a47d63aa6ae117a2df932d084 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01af9b76092015706b6583859dd83511 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_003100bd1ca596de46d07b3e67b5d2d2 = $(`<div id="html_003100bd1ca596de46d07b3e67b5d2d2" style="width: 100.0%; height: 100.0%;">Drowsiness detected at 2025-09-12 20:50:02 Trường Chinh, Phường Tây Thạnh, Thành phố Hồ Chí Minh, 71509, Việt Nam</div>`)[0];
+                popup_01af9b76092015706b6583859dd83511.setContent(html_003100bd1ca596de46d07b3e67b5d2d2);
+            
+        
+
+        marker_6f93dee4ed1b24a44f3a8106c8ec98cf.bindPopup(popup_01af9b76092015706b6583859dd83511)
+        ;
+
+        
+    
+    
+                marker_6f93dee4ed1b24a44f3a8106c8ec98cf.setIcon(icon_82f2c77a47d63aa6ae117a2df932d084);
+            
+    
+            var marker_f6a22a39b3f1382b595ceedcbc502664 = L.marker(
+                [10.823, 106.6296],
+                {
+}
+            ).addTo(map_2a1311da69f72dd0a97da0181f3b3448);
+        
+    
+            var icon_533d746a699cde5831dc7005717ff700 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b71f2ee75b3f6abf1cb97d1d2321eb99 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4cba92a4316c5793ceee636198bec2f = $(`<div id="html_e4cba92a4316c5793ceee636198bec2f" style="width: 100.0%; height: 100.0%;">Drowsiness detected at 2025-09-12 20:50:05 Trường Chinh, Phường Tây Thạnh, Thành phố Hồ Chí Minh, 71509, Việt Nam</div>`)[0];
+                popup_b71f2ee75b3f6abf1cb97d1d2321eb99.setContent(html_e4cba92a4316c5793ceee636198bec2f);
+            
+        
+
+        marker_f6a22a39b3f1382b595ceedcbc502664.bindPopup(popup_b71f2ee75b3f6abf1cb97d1d2321eb99)
+        ;
+
+        
+    
+    
+                marker_f6a22a39b3f1382b595ceedcbc502664.setIcon(icon_533d746a699cde5831dc7005717ff700);
+            
+    
+            var marker_95ed8791b09f437ee2fc66d2113ec0f4 = L.marker(
+                [10.823, 106.6296],
+                {
+}
+            ).addTo(map_2a1311da69f72dd0a97da0181f3b3448);
+        
+    
+            var icon_6095c69d4cbf4cc47f3ab67e5c56ece9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eeb643d844cc1176648ec2a75421e1a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_616b5af174b99d36793b60eda14ee24a = $(`<div id="html_616b5af174b99d36793b60eda14ee24a" style="width: 100.0%; height: 100.0%;">Drowsiness detected at 2025-09-12 20:50:18 Trường Chinh, Phường Tây Thạnh, Thành phố Hồ Chí Minh, 71509, Việt Nam</div>`)[0];
+                popup_eeb643d844cc1176648ec2a75421e1a4.setContent(html_616b5af174b99d36793b60eda14ee24a);
+            
+        
+
+        marker_95ed8791b09f437ee2fc66d2113ec0f4.bindPopup(popup_eeb643d844cc1176648ec2a75421e1a4)
+        ;
+
+        
+    
+    
+                marker_95ed8791b09f437ee2fc66d2113ec0f4.setIcon(icon_6095c69d4cbf4cc47f3ab67e5c56ece9);
+            
+    
+            var marker_e3c5c53239e4242b610e6471a3e619e1 = L.marker(
+                [10.823, 106.6296],
+                {
+}
+            ).addTo(map_2a1311da69f72dd0a97da0181f3b3448);
+        
+    
+            var icon_5fab6829d9d0b71294bb3259a94a33ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ee628c2163761321eaa530cab979b47 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0716219b156edc538e4b89af0a2aa66a = $(`<div id="html_0716219b156edc538e4b89af0a2aa66a" style="width: 100.0%; height: 100.0%;">Drowsiness detected at 2025-09-12 20:50:27 Trường Chinh, Phường Tây Thạnh, Thành phố Hồ Chí Minh, 71509, Việt Nam</div>`)[0];
+                popup_0ee628c2163761321eaa530cab979b47.setContent(html_0716219b156edc538e4b89af0a2aa66a);
+            
+        
+
+        marker_e3c5c53239e4242b610e6471a3e619e1.bindPopup(popup_0ee628c2163761321eaa530cab979b47)
+        ;
+
+        
+    
+    
+                marker_e3c5c53239e4242b610e6471a3e619e1.setIcon(icon_5fab6829d9d0b71294bb3259a94a33ef);
+            
+</script>
+</html>
