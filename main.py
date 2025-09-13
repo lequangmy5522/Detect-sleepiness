@@ -44,11 +44,11 @@ class MainMenu(QMainWindow):
 
     def open_drowsiness(self):
         print("👉 Mở chức năng phát hiện buồn ngủ.")
-        subprocess.Popen(["python", "driving_sleep/core/drowsiness_yawn.py", "--webcam", "0"])
+        subprocess.Popen(["python", "drowsiness.py", "--webcam", "0"])
 
     def open_weather(self):
         print("👉 Mở chức năng xem thời tiết.")
-        subprocess.Popen(["python", "weathers/weather_gui.py"])
+        subprocess.Popen(["python", "weather.py"])
 
   
 
